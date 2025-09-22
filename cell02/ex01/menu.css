@@ -1,13 +1,9 @@
-body {
-  font-family: Arial, sans-serif;
-}
-
 .menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
   background-color: #333;
-  overflow: hidden;
+  overflow: visible; /* แก้จาก hidden เป็น visible */
 }
 
 .menu ul li {
@@ -26,6 +22,7 @@ body {
   background-color: #111;
 }
 
+/* dropdown */
 .dropdown {
   display: none;
   position: absolute;
@@ -45,4 +42,3 @@ body {
 .menu ul li:hover .dropdown {
   display: block;
 }
-
