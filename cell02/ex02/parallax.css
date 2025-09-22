@@ -1,1 +1,41 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.parallax {
+  position: relative;
+  height: 100vh; /* เต็มจอ */
+  background-attachment: fixed; /* key ของ parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  background-image: url("https://picsum.photos/id/1018/1600/900"); /* รูปแรก */
+}
+
+.img2 {
+  background-image: url("https://picsum.photos/id/1015/1600/900"); /* รูปสอง */
+}
+
+.text {
+  color: white;
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.block {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
 
