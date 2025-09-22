@@ -1,1 +1,72 @@
 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    input, select, button {
+      margin: 5px;
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="left">
+  <select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+  </select>
+  <input type="text" id="right">
+  <input type="button" value="Try me!" onclick="calculate()">
+
+  <script>
+    function calculate() {
+      const left = document.getElementById("left").value;
+      const right = document.getElementById("right").value;
+      const op = document.getElementById("operator").value;
+
+
+      if (!/^\d+$/.test(left) || !/^\d+$/.test(right)) {
+        alert("Error :(");
+        return;
+      }
+
+      const a = parseInt(left, 10);
+      const b = parseInt(right, 10);
+      let result;
+
+      if ((op === "/" || op === "%") && b === 0) {
+        alert("It's over 9000!");
+        console.log("It's over 9000!");
+        return;
+      }
+
+      switch (op) {
+        case "+": result = a + b; break;
+        case "-": result = a - b; break;
+        case "*": result = a * b; break;
+        case "/": result = a / b; break;
+        case "%": result = a % b; break;
+      }
+
+      alert(result);
+      console.log(result);
+    }
+
+    // alert ทุก 30 วินาที
+    setInterval(() => {
+      alert("Please, use me...");
+    }, 30000);
+  </script>
+</body>
+</html>
+
