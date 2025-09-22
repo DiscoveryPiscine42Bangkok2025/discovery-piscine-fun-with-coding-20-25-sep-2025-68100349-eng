@@ -1,1 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
 
+.card {
+  width: 300px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.login {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.desc {
+  font-style: italic;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.socials img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+.contact-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #0056b3;
+}
